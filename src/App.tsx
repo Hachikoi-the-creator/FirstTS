@@ -43,7 +43,7 @@ function App(): JSX.Element {
   return (
     <div className="container p-4">
       <div className="row">
-        <div className="col-md-6 offset-md-3">
+        <div className="col-md-8 offset-md-2">
           <div className="card">
             <div className="card-body">
               <form onSubmit={handleSubmit}>
@@ -61,7 +61,7 @@ function App(): JSX.Element {
             </div>
           </div>
           {tasksArr.map((item: TaskGUI, i: number) => (
-            <div key={i} className="card card-body mt-2">
+            <div key={i} className="card card-body mt-1">
               <h2
                 style={{
                   textDecoration: item.done ? "line-through" : "underline",
@@ -72,13 +72,13 @@ function App(): JSX.Element {
               {/* <h5>-{item.done ? "Done" : "Pendient"}-</h5> */}
               <div>
                 <button
-                  className="btn btn-secondary"
+                  className="btn btn-outline-secondary"
                   onClick={() => toggleTaskCompletition(i)}
                 >
                   {item.done ? "✔️" : "❎"}
                 </button>
                 <button
-                  className="btn btn-danger"
+                  className="btn btn-outline-danger"
                   onClick={() => removeTask(i)}
                 >
                   🔨

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "bootswatch/dist/lumen/bootstrap.min.css";
+import "bootswatch/dist/vapor/bootstrap.min.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
